@@ -13,9 +13,8 @@ open class TaskViewController: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-//        self.viewself
-//        self.view.x
-        // Do any additional setup after loading the view.
+
+        
     }
     
 

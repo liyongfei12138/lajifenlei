@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 public let KMainColor:UIColor = UIColor.init(r: 221, g: 78, b: 78, a: 1)
 public let KNorColor:UIColor = UIColor.init(r: 153, g: 153, b: 153, a: 1)
 

@@ -43,22 +43,17 @@
 		D7F46F4A22CDEDFA0012D734 /* ConfigTools.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D7F46F4222CDEDFA0012D734 /* ConfigTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D7F46F6622CDEE3F0012D734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1E22CDD5590012D734 /* Color.swift */; };
 		D7F46F6722CDEE3F0012D734 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */; };
-		D7F46F6822CDEE3F0012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
 		D7F46F6B22CDEF400012D734 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */; };
 		D7F46F6C22CDEF410012D734 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */; };
 		D7F46F6D22CDEF410012D734 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */; };
 		D7F46F6E22CDEF430012D734 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */; };
 		D7F46F6F22CDEF430012D734 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */; };
-		D7F46F7022CDEF4D0012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
-		D7F46F7122CDEF4D0012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
-		D7F46F7222CDEF4E0012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
-		D7F46F7322CDEF4E0012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
-		D7F46F7422CDEF4F0012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
 		D7F46F7522CDEF540012D734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1E22CDD5590012D734 /* Color.swift */; };
 		D7F46F7622CDEF540012D734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1E22CDD5590012D734 /* Color.swift */; };
 		D7F46F7722CDEF540012D734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1E22CDD5590012D734 /* Color.swift */; };
 		D7F46F7822CDEF540012D734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1E22CDD5590012D734 /* Color.swift */; };
 		D7F46F7922CDEF550012D734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1E22CDD5590012D734 /* Color.swift */; };
+		D7F46F7E22CE12960012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
 		F5920D9C059D04634328D41E /* Pods_Interactive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323B65199ED2E2322D3B670F /* Pods_Interactive.framework */; };
 /* End PBXBuildFile section */
 
@@ -864,7 +859,6 @@
 			files = (
 				D7F46F6E22CDEF430012D734 /* UIView+Frame.swift in Sources */,
 				D7F46F7922CDEF550012D734 /* Color.swift in Sources */,
-				D7F46F7422CDEF4F0012D734 /* MacroFile.swift in Sources */,
 				D7F46F2222CDDBE60012D734 /* MarketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -875,7 +869,6 @@
 			files = (
 				D7F46F6F22CDEF430012D734 /* UIView+Frame.swift in Sources */,
 				D7F46F7822CDEF540012D734 /* Color.swift in Sources */,
-				D7F46F7322CDEF4E0012D734 /* MacroFile.swift in Sources */,
 				D7F46F2422CDDBF20012D734 /* TaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -886,7 +879,6 @@
 			files = (
 				D7F46F6B22CDEF400012D734 /* UIView+Frame.swift in Sources */,
 				D7F46F7722CDEF540012D734 /* Color.swift in Sources */,
-				D7F46F7222CDEF4E0012D734 /* MacroFile.swift in Sources */,
 				D7F46F2622CDDBFC0012D734 /* OpinionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -897,7 +889,6 @@
 			files = (
 				D7F46F6C22CDEF410012D734 /* UIView+Frame.swift in Sources */,
 				D7F46F7622CDEF540012D734 /* Color.swift in Sources */,
-				D7F46F7122CDEF4D0012D734 /* MacroFile.swift in Sources */,
 				D7F46F2A22CDDC100012D734 /* InteractiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -908,7 +899,6 @@
 			files = (
 				D7F46F6D22CDEF410012D734 /* UIView+Frame.swift in Sources */,
 				D7F46F7522CDEF540012D734 /* Color.swift in Sources */,
-				D7F46F7022CDEF4D0012D734 /* MacroFile.swift in Sources */,
 				D7F46F2822CDDC080012D734 /* MeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -918,7 +908,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7F46F6722CDEE3F0012D734 /* UIView+Frame.swift in Sources */,
-				D7F46F6822CDEE3F0012D734 /* MacroFile.swift in Sources */,
+				D7F46F7E22CE12960012D734 /* MacroFile.swift in Sources */,
 				D7F46F6622CDEE3F0012D734 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
