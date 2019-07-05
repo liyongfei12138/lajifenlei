@@ -1,6 +1,0 @@
-framework module Pods_Opinion {
-  umbrella header "Pods-Opinion-umbrella.h"
-
-  export *
-  module * { export * }
-}
