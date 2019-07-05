@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 protocol searchViewControlDelegate {
     func searchVCCallBack(info:NSDictionary)
 }
@@ -27,7 +25,7 @@ class KindSearchViewController: UIViewController,UITableViewDelegate,UITableView
         for dict in dataArray {
             let dataDic = dict as! NSDictionary
             
-            let allValue : NSArray = dataDic.object(forKey: "value") as! NSArray
+            let allValue : NSArray = dataDic.object(forKey: "items") as! NSArray
             
             allData.addObjects(from: allValue as! [Any])
             
@@ -41,7 +39,6 @@ class KindSearchViewController: UIViewController,UITableViewDelegate,UITableView
         searchResultVC.delegate = self
         
         let search = UISearchController.init(searchResultsController: searchResultVC)
-        search.searchBar.placeholder = "输入垃圾名称或首字母拼音"
         search.searchResultsUpdater = self
         search.searchBar.returnKeyType = UIReturnKeyType.done
         return search
@@ -60,7 +57,8 @@ class KindSearchViewController: UIViewController,UITableViewDelegate,UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "搜索"
-                
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "main_back"), style: .plain, target: self, action: #selector(backAction))
         definesPresentationContext = true
         
         do {
@@ -78,12 +76,16 @@ class KindSearchViewController: UIViewController,UITableViewDelegate,UITableView
             dataArray = (jsonData as! NSDictionary).object(forKey: "data") as! NSArray
             
             
-        } catch let error as Error? {
+        } catch {
             print("读取本地数据出现错误!")
         }
         
         view.addSubview(self.tableView)
         
+    }
+    
+    @objc func backAction(){
+        navigationController?.popViewController(animated: true)
     }
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -95,7 +97,7 @@ class KindSearchViewController: UIViewController,UITableViewDelegate,UITableView
         
         for dict in allDataArray {
             let futureDict = dict as! NSDictionary
-            let codeStr = futureDict.object(forKey: "code") as! String
+            let codeStr = futureDict.object(forKey: "shortcut") as! String
             let name = futureDict.object(forKey: "name") as! String
             
             if name.contains(searchText) || codeStr.contains(searchText) {
@@ -121,7 +123,21 @@ class KindSearchViewController: UIViewController,UITableViewDelegate,UITableView
         let futureDic : NSDictionary = valueArray.object(at: indexPath.row) as! NSDictionary
         
         cell.futureNameLabel.text = futureDic.object(forKey: "name") as? String
-//        cell.futureCodeLabel.text = futureDic.object(forKey: "shortcut") as? String
+        cell.selectionStyle = .none
+        
+        if futureDic.object(forKey: "category") as! String == "0" {
+            cell.futureCodeLabel.text = "[湿垃圾]"
+        }
+        if futureDic.object(forKey: "category") as! String == "1" {
+            cell.futureCodeLabel.text = "[干垃圾]"
+        }
+        if futureDic.object(forKey: "category") as! String == "2" {
+            cell.futureCodeLabel.text = "[可回收物]"
+        }
+        if futureDic.object(forKey: "category") as! String == "3" {
+            cell.futureCodeLabel.text = "[有害垃圾]"
+        }
+        
         return cell
     }
     
@@ -130,49 +146,12 @@ class KindSearchViewController: UIViewController,UITableViewDelegate,UITableView
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+//        tableView.deselectRow(at: indexPath, animated: true)
         
-    }
-    
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return UIView.init()
-    }
-    
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 0.01
-    }
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView.init(frame: CGRect(x: 0, y: 0, width: kDeviceWidth, height: 35))
-        headerView.backgroundColor = .groupTableViewBackground
-        
-        let headerLabel = UILabel.init(frame: CGRect(x: 8, y: 0, width: kDeviceWidth - 8, height: 35))
-        headerLabel.backgroundColor = .groupTableViewBackground
-        headerLabel.textColor = .darkGray
-        headerLabel.font = .systemFont(ofSize: 15.0, weight: .thin)
-        let dict : NSDictionary = dataArray.object(at: section) as! NSDictionary
-        headerLabel.text = dict.object(forKey: "name") as? String
-        headerView.addSubview(headerLabel)
-        return headerView
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 35
     }
     
     func searchResultCallBack(info: NSDictionary) {
         self.delegate?.searchVCCallBack(info: info)
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
 }
 

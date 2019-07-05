@@ -8,5 +8,10 @@ target 'Garbage' do
   use_frameworks!
   
 
+  pod 'Alamofire'
+  
+  pod 'SnapKit'
+  
+  pod 'Segmentio'
   
 end

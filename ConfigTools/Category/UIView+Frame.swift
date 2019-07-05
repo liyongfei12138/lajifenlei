@@ -47,4 +47,25 @@ public extension UIView {
             self.frame = CGRect(x: self.frame.origin.x, y:y , width: self.frame.width, height: self.frame.height)
         }
     }
+    
+    var centerX : CGFloat {
+        get{
+            return self.center.x
+        }
+        set(centerX) {
+            
+            self.center = CGPoint(x: centerX, y: self.center.y)
+        }
+    }
+    
+    var centerY : CGFloat {
+        get{
+            return self.center.y
+        }
+        set(centerY) {
+            
+            self.center = CGPoint(x: self.center.x, y:centerY)
+        }
+    }
+    
 }

@@ -7,11 +7,7 @@
 //
 
 import UIKit
-import Market
-import Task
 
-import Me
-import ConfigTools
 open class MainViewController: UITabBarController {
 
     
@@ -22,15 +18,15 @@ open class MainViewController: UITabBarController {
     
 
 
-    let marketNorImg = UIImage(named: "") ?? UIImage()
-    let taskNorImg  = UIImage(named: "") ?? UIImage()
+    let marketNorImg = UIImage(named: "tab_ser_nor") ?? UIImage()
+    let taskNorImg  = UIImage(named: "tab_kind_nor") ?? UIImage()
 
-    let meNorImg  = UIImage(named: "") ?? UIImage()
+    let meNorImg  = UIImage(named: "tab_ot_nor") ?? UIImage()
     
-    let marketSelImg = UIImage(named: "") ?? UIImage()
-    let taskSelImg  = UIImage(named: "") ?? UIImage()
+    let marketSelImg = UIImage(named: "tab_ser_sel") ?? UIImage()
+    let taskSelImg  = UIImage(named: "tab_kind_sel") ?? UIImage()
 
-    let meSelImg  = UIImage(named: "") ?? UIImage()
+    let meSelImg  = UIImage(named: "tab_ot_sel") ?? UIImage()
     
     open  override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +40,7 @@ open class MainViewController: UITabBarController {
         
         let marketNav = self.configNav(titleString: market, norImg: marketNorImg, seleImg: marketSelImg, vc: SearchViewController())
         
-        let taskNav = self.configNav(titleString: task, norImg: taskNorImg, seleImg: taskSelImg, vc: KindViewController())
+        let taskNav = self.configNav(titleString: task, norImg: taskNorImg, seleImg: taskSelImg, vc: GarbageTypeViewController())
 
         
         let meNav = self.configNav(titleString: me, norImg: meNorImg, seleImg: meSelImg, vc: OtherViewController())

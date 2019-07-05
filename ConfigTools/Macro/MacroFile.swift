@@ -12,7 +12,7 @@ import UIKit
  let KMainColor:UIColor = UIColor.init(r: 31, g: 31, b: 31, a: 1)
  let KNorColor:UIColor = UIColor.init(r: 153, g: 153, b: 153, a: 1)
 
-let kDeviceWidth:CGFloat = UIApplication.shared.keyWindow?.frame.size.width ?? 0
-let kDeviceHeight:CGFloat = UIApplication.shared.keyWindow?.frame.size.height ?? 0
- let kDeviceStatusHeight:CGFloat = UIApplication.shared.statusBarFrame.size.height ?? 0
- let kDeviceNavHeight:CGFloat = UIApplication.shared.statusBarFrame.size.height + 44 ?? 0
+let kDeviceWidth:CGFloat = UIScreen.main.bounds.size.width
+let kDeviceHeight:CGFloat = UIScreen.main.bounds.size.height
+ let kDeviceStatusHeight:CGFloat = UIApplication.shared.statusBarFrame.size.height 
+ let kDeviceNavHeight:CGFloat = UIApplication.shared.statusBarFrame.size.height + 44 

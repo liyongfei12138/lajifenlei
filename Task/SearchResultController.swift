@@ -19,13 +19,13 @@ class SearchResultController: UIViewController,UITableViewDelegate,UITableViewDa
     var delegate : searchResultDelegate?
     
     lazy var tableView:UITableView = {
-        let table = UITableView.init(frame: self.view.bounds, style: .plain)
+        let table = UITableView.init(frame: .zero, style: .plain)
         table.delegate = self
         table.dataSource = self
         table.register(UINib.init(nibName: "SearchTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-        var rect = table.contentOffset
-        rect.y = -100
-        table.contentOffset = rect
+//        var rect = table.contentOffset
+//        rect.y = -100
+//        table.contentOffset = rect
         return table
     }()
 
@@ -34,10 +34,11 @@ class SearchResultController: UIViewController,UITableViewDelegate,UITableViewDa
         
         self.title = "搜索结果"
         self.view.addSubview(tableView)
-//        tableView.snp.makeConstraints { (make) in
-//            make.left.right.bottom.equalToSuperview()
-//            make.top.equalToSuperview().offset(kNavBarHeight() + 55)
-//        }
+        tableView.snp.makeConstraints { (make) in
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalToSuperview().offset(-45)
+//            make.edges.equalToSuperview()
+        }
     }
     
     func updateSearchResult(dataArray:NSMutableArray){
@@ -51,10 +52,28 @@ class SearchResultController: UIViewController,UITableViewDelegate,UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-//        let futureDic : NSDictionary = resultArray.object(at: indexPath.row) as! NSDictionary
-//
-//        self.delegate?.searchResultCallBack(info: futureDic)
+//        tableView.deselectRow(at: indexPath, animated: true)
+        let futureDic : NSDictionary = resultArray.object(at: indexPath.row) as! NSDictionary
+        var type  = ""
+        if futureDic.object(forKey: "category") as! String == "0" {
+            type = "[湿垃圾]"
+        }
+        if futureDic.object(forKey: "category") as! String == "1" {
+            type = "[干垃圾]"
+        }
+        if futureDic.object(forKey: "category") as! String == "2" {
+            type = "[可回收物]"
+        }
+        if futureDic.object(forKey: "category") as! String == "3" {
+            type = "[有害垃圾]"
+        }
+
+        
+        let message = NSString.init(format: "%@  %@", (futureDic.object(forKey: "name") as! String),type)
+        
+        let alertController = UIAlertController.init(title: "", message: message as String, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction.init(title: "我已了解", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
 
     }
     
@@ -66,7 +85,6 @@ class SearchResultController: UIViewController,UITableViewDelegate,UITableViewDa
         
         cell.futureNameLabel.text = futureDic.object(forKey: "name") as? String
         cell.futureCodeLabel.text = futureDic.object(forKey: "code") as? String
-        cell.selectionStyle = .none
         return cell
     }
     

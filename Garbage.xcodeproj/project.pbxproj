@@ -3,31 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5D1550AF031915F0C0760651 /* Pods_Garbage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CD36247FF375F7CBD042CB /* Pods_Garbage.framework */; };
 		D7F46E7422CDCDF80012D734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46E7322CDCDF80012D734 /* AppDelegate.swift */; };
-		D7F46E7622CDCDF80012D734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46E7522CDCDF80012D734 /* ViewController.swift */; };
 		D7F46E7922CDCDF80012D734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F46E7722CDCDF80012D734 /* Main.storyboard */; };
 		D7F46E7B22CDCDF90012D734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F46E7A22CDCDF90012D734 /* Assets.xcassets */; };
 		D7F46E7E22CDCDF90012D734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F46E7C22CDCDF90012D734 /* LaunchScreen.storyboard */; };
 		D7F46F3822CDE11C0012D734 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1122CDD1460012D734 /* MainViewController.swift */; };
-		D7F46F9522CF20040012D734 /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F8822CF03EB0012D734 /* SearchResultController.swift */; };
-		D7F46F9622CF20040012D734 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F8922CF03EB0012D734 /* SearchTableViewCell.swift */; };
-		D7F46F9722CF20040012D734 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F46F8722CF03EB0012D734 /* SearchTableViewCell.xib */; };
-		D7F46F9822CF20040012D734 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = D7F46F8522CF033D0012D734 /* catalog.json */; };
-		D7F46F9922CF20040012D734 /* FutureCode.plist in Resources */ = {isa = PBXBuildFile; fileRef = D7F46F8B22CF03EB0012D734 /* FutureCode.plist */; };
-		D7F46F9B22CF20040012D734 /* KindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F2322CDDBF20012D734 /* KindViewController.swift */; };
 		D7F46F9C22CF20040012D734 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F2722CDDC080012D734 /* OtherViewController.swift */; };
 		D7F46F9D22CF20040012D734 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1E22CDD5590012D734 /* Color.swift */; };
 		D7F46F9E22CF20040012D734 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */; };
 		D7F46F9F22CF20040012D734 /* BaseHiddenBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F8022CEFBBA0012D734 /* BaseHiddenBarViewController.swift */; };
 		D7F46FA022CF20040012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
 		D7F46FA222CF209D0012D734 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FA122CF209D0012D734 /* SearchViewController.swift */; };
-		D7F46FA422CF20A40012D734 /* KindSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FA322CF20A40012D734 /* KindSearchViewController.swift */; };
 		D7F46FA622CF2AB60012D734 /* OtherNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FA522CF2AB60012D734 /* OtherNavView.swift */; };
+		D7F46FA922CF2FA50012D734 /* OtherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FA822CF2FA50012D734 /* OtherButton.swift */; };
+		D7F46FAB22CF38B60012D734 /* OtherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FAA22CF38B60012D734 /* OtherDetailViewController.swift */; };
+		D7F46FAD22CF4B670012D734 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FAC22CF4B670012D734 /* Toast.swift */; };
+		D7F46FAF22CF577D0012D734 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FAE22CF577D0012D734 /* SearchModel.swift */; };
+		D7F46FBD22CF66780012D734 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = D7F46FB022CF66770012D734 /* catalog.json */; };
+		D7F46FBE22CF66780012D734 /* GarbageTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FB122CF66770012D734 /* GarbageTypeViewController.swift */; };
+		D7F46FBF22CF66780012D734 /* UIFont+ExampleFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FB322CF66770012D734 /* UIFont+ExampleFonts.swift */; };
+		D7F46FC022CF66780012D734 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FB422CF66770012D734 /* ColorPalette.swift */; };
+		D7F46FC122CF66780012D734 /* SegmentioBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FB522CF66770012D734 /* SegmentioBuilder.swift */; };
+		D7F46FC222CF66780012D734 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7F46FB622CF66780012D734 /* SearchTableViewCell.xib */; };
+		D7F46FC322CF66780012D734 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FB722CF66780012D734 /* SearchTableViewCell.swift */; };
+		D7F46FC422CF66780012D734 /* KindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FB822CF66780012D734 /* KindViewController.swift */; };
+		D7F46FC522CF66780012D734 /* GarbageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FB922CF66780012D734 /* GarbageModel.swift */; };
+		D7F46FC622CF66780012D734 /* GarbageCateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FBA22CF66780012D734 /* GarbageCateHeaderView.swift */; };
+		D7F46FC722CF66780012D734 /* KindSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FBB22CF66780012D734 /* KindSearchViewController.swift */; };
+		D7F46FC822CF66780012D734 /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FBC22CF66780012D734 /* SearchResultController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,7 +56,6 @@
 		5B964849ED019052BCF006AF /* Pods-Garbage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garbage.debug.xcconfig"; path = "Target Support Files/Pods-Garbage/Pods-Garbage.debug.xcconfig"; sourceTree = "<group>"; };
 		D7F46E7022CDCDF70012D734 /* Garbage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garbage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F46E7322CDCDF80012D734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7F46E7522CDCDF80012D734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7F46E7822CDCDF80012D734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7F46E7A22CDCDF90012D734 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7F46E7D22CDCDF90012D734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,18 +63,27 @@
 		D7F46F1122CDD1460012D734 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D7F46F1422CDD4B30012D734 /* MacroFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroFile.swift; sourceTree = "<group>"; };
 		D7F46F1E22CDD5590012D734 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
-		D7F46F2322CDDBF20012D734 /* KindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindViewController.swift; sourceTree = "<group>"; };
 		D7F46F2722CDDC080012D734 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		D7F46F8022CEFBBA0012D734 /* BaseHiddenBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseHiddenBarViewController.swift; sourceTree = "<group>"; };
-		D7F46F8522CF033D0012D734 /* catalog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
-		D7F46F8722CF03EB0012D734 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
-		D7F46F8822CF03EB0012D734 /* SearchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
-		D7F46F8922CF03EB0012D734 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
-		D7F46F8B22CF03EB0012D734 /* FutureCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FutureCode.plist; sourceTree = "<group>"; };
 		D7F46FA122CF209D0012D734 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		D7F46FA322CF20A40012D734 /* KindSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KindSearchViewController.swift; sourceTree = "<group>"; };
 		D7F46FA522CF2AB60012D734 /* OtherNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNavView.swift; sourceTree = "<group>"; };
+		D7F46FA822CF2FA50012D734 /* OtherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherButton.swift; sourceTree = "<group>"; };
+		D7F46FAA22CF38B60012D734 /* OtherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherDetailViewController.swift; sourceTree = "<group>"; };
+		D7F46FAC22CF4B670012D734 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = ConfigTools/BaseView/Toast.swift; sourceTree = SOURCE_ROOT; };
+		D7F46FAE22CF577D0012D734 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
+		D7F46FB022CF66770012D734 /* catalog.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
+		D7F46FB122CF66770012D734 /* GarbageTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarbageTypeViewController.swift; sourceTree = "<group>"; };
+		D7F46FB322CF66770012D734 /* UIFont+ExampleFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+ExampleFonts.swift"; sourceTree = "<group>"; };
+		D7F46FB422CF66770012D734 /* ColorPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		D7F46FB522CF66770012D734 /* SegmentioBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentioBuilder.swift; sourceTree = "<group>"; };
+		D7F46FB622CF66780012D734 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		D7F46FB722CF66780012D734 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		D7F46FB822CF66780012D734 /* KindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KindViewController.swift; sourceTree = "<group>"; };
+		D7F46FB922CF66780012D734 /* GarbageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarbageModel.swift; sourceTree = "<group>"; };
+		D7F46FBA22CF66780012D734 /* GarbageCateHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GarbageCateHeaderView.swift; sourceTree = "<group>"; };
+		D7F46FBB22CF66780012D734 /* KindSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KindSearchViewController.swift; sourceTree = "<group>"; };
+		D7F46FBC22CF66780012D734 /* SearchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
 		DA2B637B1DC44929A6CA1ABB /* Pods-Garbage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garbage.release.xcconfig"; path = "Target Support Files/Pods-Garbage/Pods-Garbage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				D7F46F3A22CDE26C0012D734 /* Main */,
-				D7F46E7522CDCDF80012D734 /* ViewController.swift */,
 				D7F46E7722CDCDF80012D734 /* Main.storyboard */,
 				D7F46E7A22CDCDF90012D734 /* Assets.xcassets */,
 				D7F46E7C22CDCDF90012D734 /* LaunchScreen.storyboard */,
@@ -139,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				D7F46FA122CF209D0012D734 /* SearchViewController.swift */,
+				D7F46FAE22CF577D0012D734 /* SearchModel.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -146,13 +162,16 @@
 		D7F46E9D22CDCED00012D734 /* Task */ = {
 			isa = PBXGroup;
 			children = (
-				D7F46F8822CF03EB0012D734 /* SearchResultController.swift */,
-				D7F46F8922CF03EB0012D734 /* SearchTableViewCell.swift */,
-				D7F46F8722CF03EB0012D734 /* SearchTableViewCell.xib */,
-				D7F46F8522CF033D0012D734 /* catalog.json */,
-				D7F46F8B22CF03EB0012D734 /* FutureCode.plist */,
-				D7F46FA322CF20A40012D734 /* KindSearchViewController.swift */,
-				D7F46F2322CDDBF20012D734 /* KindViewController.swift */,
+				D7F46FB022CF66770012D734 /* catalog.json */,
+				D7F46FBA22CF66780012D734 /* GarbageCateHeaderView.swift */,
+				D7F46FB922CF66780012D734 /* GarbageModel.swift */,
+				D7F46FB122CF66770012D734 /* GarbageTypeViewController.swift */,
+				D7F46FBB22CF66780012D734 /* KindSearchViewController.swift */,
+				D7F46FB822CF66780012D734 /* KindViewController.swift */,
+				D7F46FBC22CF66780012D734 /* SearchResultController.swift */,
+				D7F46FB722CF66780012D734 /* SearchTableViewCell.swift */,
+				D7F46FB622CF66780012D734 /* SearchTableViewCell.xib */,
+				D7F46FB222CF66770012D734 /* segment */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -161,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				D7F46F2722CDDC080012D734 /* OtherViewController.swift */,
+				D7F46FAA22CF38B60012D734 /* OtherDetailViewController.swift */,
+				D7F46FA822CF2FA50012D734 /* OtherButton.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -178,6 +199,7 @@
 			children = (
 				D7F46F1E22CDD5590012D734 /* Color.swift */,
 				D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */,
+				D7F46FAC22CF4B670012D734 /* Toast.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -210,6 +232,16 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
+		D7F46FB222CF66770012D734 /* segment */ = {
+			isa = PBXGroup;
+			children = (
+				D7F46FB322CF66770012D734 /* UIFont+ExampleFonts.swift */,
+				D7F46FB422CF66770012D734 /* ColorPalette.swift */,
+				D7F46FB522CF66770012D734 /* SegmentioBuilder.swift */,
+			);
+			path = segment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +254,7 @@
 				D7F46E6D22CDCDF70012D734 /* Frameworks */,
 				D7F46E6E22CDCDF70012D734 /* Resources */,
 				D7F46E9622CDCE890012D734 /* Embed Frameworks */,
+				2488A71BC0B74EDA137F414C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,17 +304,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7F46E7E22CDCDF90012D734 /* LaunchScreen.storyboard in Resources */,
-				D7F46F9722CF20040012D734 /* SearchTableViewCell.xib in Resources */,
-				D7F46F9922CF20040012D734 /* FutureCode.plist in Resources */,
 				D7F46E7B22CDCDF90012D734 /* Assets.xcassets in Resources */,
-				D7F46F9822CF20040012D734 /* catalog.json in Resources */,
 				D7F46E7922CDCDF80012D734 /* Main.storyboard in Resources */,
+				D7F46FBD22CF66780012D734 /* catalog.json in Resources */,
+				D7F46FC222CF66780012D734 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2488A71BC0B74EDA137F414C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Garbage/Pods-Garbage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Garbage/Pods-Garbage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Garbage/Pods-Garbage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		56D42ABE07F9811298B65029 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -311,20 +360,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F46F9B22CF20040012D734 /* KindViewController.swift in Sources */,
+				D7F46FC822CF66780012D734 /* SearchResultController.swift in Sources */,
+				D7F46FC022CF66780012D734 /* ColorPalette.swift in Sources */,
 				D7F46F9F22CF20040012D734 /* BaseHiddenBarViewController.swift in Sources */,
+				D7F46FAD22CF4B670012D734 /* Toast.swift in Sources */,
+				D7F46FAF22CF577D0012D734 /* SearchModel.swift in Sources */,
+				D7F46FC622CF66780012D734 /* GarbageCateHeaderView.swift in Sources */,
 				D7F46F9C22CF20040012D734 /* OtherViewController.swift in Sources */,
-				D7F46E7622CDCDF80012D734 /* ViewController.swift in Sources */,
+				D7F46FC522CF66780012D734 /* GarbageModel.swift in Sources */,
 				D7F46FA022CF20040012D734 /* MacroFile.swift in Sources */,
 				D7F46F9D22CF20040012D734 /* Color.swift in Sources */,
 				D7F46E7422CDCDF80012D734 /* AppDelegate.swift in Sources */,
 				D7F46FA222CF209D0012D734 /* SearchViewController.swift in Sources */,
-				D7F46FA422CF20A40012D734 /* KindSearchViewController.swift in Sources */,
-				D7F46F9622CF20040012D734 /* SearchTableViewCell.swift in Sources */,
+				D7F46FC322CF66780012D734 /* SearchTableViewCell.swift in Sources */,
+				D7F46FC722CF66780012D734 /* KindSearchViewController.swift in Sources */,
 				D7F46F3822CDE11C0012D734 /* MainViewController.swift in Sources */,
+				D7F46FC122CF66780012D734 /* SegmentioBuilder.swift in Sources */,
+				D7F46FBF22CF66780012D734 /* UIFont+ExampleFonts.swift in Sources */,
 				D7F46FA622CF2AB60012D734 /* OtherNavView.swift in Sources */,
-				D7F46F9522CF20040012D734 /* SearchResultController.swift in Sources */,
+				D7F46FA922CF2FA50012D734 /* OtherButton.swift in Sources */,
+				D7F46FC422CF66780012D734 /* KindViewController.swift in Sources */,
+				D7F46FAB22CF38B60012D734 /* OtherDetailViewController.swift in Sources */,
 				D7F46F9E22CF20040012D734 /* UIView+Frame.swift in Sources */,
+				D7F46FBE22CF66780012D734 /* GarbageTypeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,16 +530,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KM5M87Q2D9;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DYFR723CD3;
 				INFOPLIST_FILE = "$(SRCROOT)/Garbage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bjd.product.QCStock88;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.ljglj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_lj;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -493,16 +553,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KM5M87Q2D9;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DYFR723CD3;
 				INFOPLIST_FILE = "$(SRCROOT)/Garbage/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bjd.product.QCStock88;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qq.ljglj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dis_lj;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

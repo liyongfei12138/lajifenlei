@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: d3d0c6159aa1f71e591bbdb340783c7615956988
+PODS:
+  - Alamofire (4.8.2)
+  - Segmentio (3.3)
+  - SnapKit (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - Segmentio
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Segmentio
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Segmentio: 4ff49aa4f4c916998c0d886c549ce62ca9eae251
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+
+PODFILE CHECKSUM: 8e906d0fedd4a9c9c1987d432e6c9587d47a6c4f
 
 COCOAPODS: 1.7.2
