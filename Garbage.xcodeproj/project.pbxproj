@@ -27,6 +27,7 @@
 		D7F46FA022CF20040012D734 /* MacroFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46F1422CDD4B30012D734 /* MacroFile.swift */; };
 		D7F46FA222CF209D0012D734 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FA122CF209D0012D734 /* SearchViewController.swift */; };
 		D7F46FA422CF20A40012D734 /* KindSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FA322CF20A40012D734 /* KindSearchViewController.swift */; };
+		D7F46FA622CF2AB60012D734 /* OtherNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F46FA522CF2AB60012D734 /* OtherNavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +67,7 @@
 		D7F46F8B22CF03EB0012D734 /* FutureCode.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FutureCode.plist; sourceTree = "<group>"; };
 		D7F46FA122CF209D0012D734 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D7F46FA322CF20A40012D734 /* KindSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KindSearchViewController.swift; sourceTree = "<group>"; };
+		D7F46FA522CF2AB60012D734 /* OtherNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNavView.swift; sourceTree = "<group>"; };
 		DA2B637B1DC44929A6CA1ABB /* Pods-Garbage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Garbage.release.xcconfig"; path = "Target Support Files/Pods-Garbage/Pods-Garbage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,7 +178,6 @@
 			children = (
 				D7F46F1E22CDD5590012D734 /* Color.swift */,
 				D7F46F3B22CDEBFA0012D734 /* UIView+Frame.swift */,
-				D7F46F8022CEFBBA0012D734 /* BaseHiddenBarViewController.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -193,10 +194,20 @@
 		D7F46F4322CDEDFA0012D734 /* ConfigTools */ = {
 			isa = PBXGroup;
 			children = (
+				D7F46FA722CF2AC50012D734 /* BaseView */,
 				D7F46F1D22CDD51C0012D734 /* Category */,
 				D7F46F1C22CDD5110012D734 /* Macro */,
 			);
 			path = ConfigTools;
+			sourceTree = "<group>";
+		};
+		D7F46FA722CF2AC50012D734 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				D7F46F8022CEFBBA0012D734 /* BaseHiddenBarViewController.swift */,
+				D7F46FA522CF2AB60012D734 /* OtherNavView.swift */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				D7F46FA422CF20A40012D734 /* KindSearchViewController.swift in Sources */,
 				D7F46F9622CF20040012D734 /* SearchTableViewCell.swift in Sources */,
 				D7F46F3822CDE11C0012D734 /* MainViewController.swift in Sources */,
+				D7F46FA622CF2AB60012D734 /* OtherNavView.swift in Sources */,
 				D7F46F9522CF20040012D734 /* SearchResultController.swift in Sources */,
 				D7F46F9E22CF20040012D734 /* UIView+Frame.swift in Sources */,
 			);

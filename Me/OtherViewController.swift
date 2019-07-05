@@ -10,10 +10,17 @@ import UIKit
 
 open class OtherViewController: BaseHiddenBarViewController {
 
+    
+     let nav = OtherNavView(frame: CGRect(x: 0, y: 0, width: kDeviceWidth, height: kDeviceNavHeight), title: "其他")
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.view.addSubview(nav)
+       
+        
     }
     
 
